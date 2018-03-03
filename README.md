@@ -14,6 +14,13 @@ Primeros pasos
 + Para ejecutar las tareas del gulp basica, minificacion de css,js y compresion de imagenes se debe teclear el comando "gulp dev"
 
 
+Tecnologias a usar
+--------------------
++ js puro y basico con ES6
++ Stylus
++ HTML5
+
+
 Aprendizaje adicional
 ----------------------
 
