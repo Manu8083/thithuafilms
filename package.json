@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/Manu8083/thithuafilms#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-stylus": "^2.7.0",
+    "gulp-uglify": "^3.0.0"
   }
 }
