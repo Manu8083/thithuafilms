@@ -1,5 +1,12 @@
-# thithuafilms
-Landing page para tithuafilms, productora audiovisual.
+ThithuaFilms
+==========
 
-#Primeros Pasos
-##Es fundamental hacer el npm install inicial, y encargarse de tener node.js instalado en el pc de manera global.
+Este es el README del LandingPage TithuaFilms.
+Acontinuacion se dara una pequeña guia para el correcto funcionamiento del proyecto.
+
+Primeros pasos
+--------------------
+
++ Es fundamental tener node.js instalado de manera global.
++ Cuando se baje el repositorio se debe hacer el respectivo npm-install para instalar las dependencias de desarrollo.
++ Se esta usando gulp.js para minificar el codigo y comprimir las imagenes, leer primeros pasos con gulp (https://frontendlabs.io/1669--gulp-js-en-espanol-tutorial-basico-primeros-pasos-y-ejemplos )
