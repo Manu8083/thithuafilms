@@ -2,7 +2,8 @@ var gulp = require('gulp'),
 	concat = require('gulp-concat'),
 	uglify = require('gulp-uglify'),
 	stylus = require('gulp-stylus'),
-	imagemin = require('gulp-imagemin');
+	imagemin = require('gulp-imagemin'),
+	htmlmin = require('gulp-htmlmin');
 
 
 var pathCSS = {
@@ -27,11 +28,17 @@ gulp.task('estilos',['imagenes'], function () {
         .pipe(gulp.dest(pathCSS.css));
 });
 
-gulp.task('js', ['estilos'], function () {
+gulp.task('html', ['estilos'] ,function() {
+  return gulp.src('vistas/*.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('build'));
+});
+
+gulp.task('js', ['html'], function () {
 	gulp.src('js/*.js')
-	.pipe(concat('todo.js'))
+	.pipe(concat('main.js'))
 	.pipe(uglify())
 	.pipe(gulp.dest('build/js'))
 });
 
-gulp.task('dev', ['imagenes', 'estilos', 'js']);
+gulp.task('dev', ['imagenes', 'estilos', 'html', 'js']);
