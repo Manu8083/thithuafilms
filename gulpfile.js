@@ -5,10 +5,12 @@ var gulp = require('gulp'),
 	imagemin = require('gulp-imagemin'),
 	htmlmin = require('gulp-htmlmin');
 
+
 var pathCSS = {
     stylus: ['stylus/*.styl'],
     css: 'build/css/'
 };
+
 
 gulp.task('imagenes',function(){
     console.log("Comprimiendo Imagenes");

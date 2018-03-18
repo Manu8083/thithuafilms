@@ -17,11 +17,14 @@
   },
   "homepage": "https://github.com/Manu8083/thithuafilms#readme",
   "devDependencies": {
+    "browserify": "^16.1.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-htmlmin": "^4.0.0",
     "gulp-imagemin": "^4.1.0",
     "gulp-stylus": "^2.7.0",
-    "gulp-uglify": "^3.0.0"
+    "gulp-uglify": "^3.0.0",
+    "vinyl-source-stream": "^2.0.0",
+    "watchify": "^3.10.0"
   }
 }
